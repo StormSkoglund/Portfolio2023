@@ -2,17 +2,19 @@ const flipCard1 = document.getElementById("c1");
 const flipCard2 = document.getElementById("c2");
 const flipCard3 = document.getElementById("c3");
 
-flipCard1.addEventListener(onclick, function () {
-  flipCard1.style.transform = "rotate3d(0, 1, 0.5, 3.142rad);";
+//Flip cards
+
+flipCard1.addEventListener("click", function () {
+  document.getElementById("c1").style.transform = "rotateY(180deg)"; //CSS Rotation, Available at https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate[viewed Dec 12 2023].
   console.log(1);
 });
 
-flipCard2.addEventListener(onclick, function () {
-  flipCard1.style.transform = "rotate3d(0, 1, 0.5, 3.142rad);";
+flipCard2.addEventListener("click", function () {
+  document.getElementById("c2").style.transform = "rotateY(180deg)";
   console.log(2);
 });
 
-flipCard3.addEventListener(onclick, function () {
-  flipCard1.style.transform = "rotate3d(0, 1, 0.5, 3.142rad);";
+flipCard3.addEventListener("click", function () {
+  document.getElementById("c3").style.transform = "rotateY(180deg)";
   console.log(3);
 });

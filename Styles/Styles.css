@@ -29,25 +29,25 @@ body {
   position: absolute;
   left: 5em;
   top: 3.5em;
-  opacity: 60%;
-  filter: contrast(120%);
+  opacity: 65%;
 }
 
-.moon-and-man {
+/*.moon-and-man {
   /*position: absolute;
   width: 200px;
-  height: 300px;*/
-}
+  height: 300px;
+}*/
 
 .outside {
   font-size: 70px;
 }
 
 .inside {
-  position: absolute;
-  top: 5em;
-  right: 30%;
-  left: 30%;
+  background-color: var(--my-white);
+  max-width: fit-content;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  padding: 1em;
   font-size: 50px;
   color: rgba(2, 64, 89, 1);
 }
