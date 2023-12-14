@@ -7,32 +7,62 @@ const div3 = document.getElementById("3");
 
 //Flip cards and change image.
 
-flipCard1.addEventListener("click", function () {
+flipCard1.addEventListener("mousedown", function () {
   document.getElementById("c1").style.transform = "rotateY(180deg)"; //CSS Rotation, Available at https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate[viewed Dec 12 2023].
-  div1.innerHTML = `<img
-  class="card 1"
-  id="c1"
-  src="/Images/GAMEHUB-min.jpg"
-  alt="A screenshot of my first website"`;
-  console.log(1);
 });
 
-flipCard2.addEventListener("click", function () {
+//Render other side of card
+flipCard1.addEventListener("mouseup", function () {
+  div1.innerHTML = `<div class="card-click">
+  <img
+    src="/Images/GAMEHUB-min.png"
+    alt="Screenshot of my first project"
+    class="image"
+  />
+  <div class="text">
+    <h2>Game Hub</h2>
+    <p>My first project</p>
+    <a href="">GitHub</a> <a href="">Netlify</a>
+  </div>
+</div>`;
+});
+
+flipCard2.addEventListener("mousedown", function () {
   document.getElementById("c2").style.transform = "rotateY(180deg)";
-  div2.innerHTML = `<img
-  class="card 2"
-  id="c2"
-  src="/Images/Comscimus-min.jpg"
-  alt="A screenshot of my second website"`;
   console.log(2);
 });
 
-flipCard3.addEventListener("click", function () {
+flipCard2.addEventListener("mouseup", function () {
+  div2.innerHTML = `<div class="card-click">
+  <img
+    src="/Images/Comscimus-min.png"
+    alt="Screenshot of my second project"
+    class="image"
+  />
+  <div class="text">
+    <h2>The Community Science Museum</h2>
+    <p>My second project</p>
+    <a href="">GitHub</a> <a href="">Netlify</a>
+  </div>
+</div>`;
+});
+
+flipCard3.addEventListener("mousedown", function () {
   document.getElementById("c3").style.transform = "rotateY(180deg)";
-  div3.innerHTML = `<img
-  class="card 3"
-  id="c3"
-  src="/Images/ProjectExam-min.jpg"
-  alt="A screenshot of my third website"`;
   console.log(3);
+});
+
+flipCard3.addEventListener("mouseup", function () {
+  div3.innerHTML = `<div class="card-click">
+  <img
+    src="/Images/ProjectExam-min.png"
+    alt="Screenshot of my third project"
+    class="image"
+  />
+  <div class="text">
+    <h2>The Project Exam</h2>
+    <p>My third project</p>
+    <a href="">GitHub</a> <a href="">Netlify</a>
+  </div>
+</div>`;
 });

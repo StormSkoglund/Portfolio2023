@@ -2,7 +2,8 @@
 h1 {
   font-family: "Limelight", sans-serif, Arial, Helvetica;
 }
-h2 {
+h2,
+a {
   font-family: "Hind Guntur", sans-serif, "Lucida Sans", "Lucida Sans Regular",
     "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
@@ -19,6 +20,9 @@ p {
   );
   --my-white: rgb(235, 222, 218);
   --my-black: rgb(36, 33, 33);
+  --my-bronze: rgb(109, 147, 131);
+  --my-cardboard: rgb(142, 105, 93);
+  --my-sea: rgb(82, 91, 113);
 }
 
 body {
@@ -32,11 +36,9 @@ body {
   opacity: 65%;
 }
 
-/*.moon-and-man {
-  /*position: absolute;
-  width: 200px;
-  height: 300px;
-}*/
+.moon-and-man {
+  opacity: 90%;
+}
 
 .outside {
   font-size: 70px;
@@ -45,8 +47,8 @@ body {
 .inside {
   background-color: var(--my-white);
   max-width: fit-content;
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
+  border-top-right-radius: 100px;
+  border-top-left-radius: 100px;
   padding: 1em;
   font-size: 50px;
   color: rgba(2, 64, 89, 1);
@@ -71,8 +73,8 @@ body {
 }
 
 .card {
-  width: 10em;
-  width: 15em;
+  width: 20em;
+  height: 30em;
   box-shadow: 0px 5px 20px var(--my-black);
   margin: 1.5em;
   border-radius: 20px;
@@ -81,6 +83,67 @@ body {
 
 .card:hover {
   transform: scale(1.5);
+}
+
+.card-click {
+  width: 20em;
+  height: 30em;
+  box-shadow: 0px 5px 20px var(--my-black);
+  margin: 1.5em;
+  border-radius: 20px;
+  transition: transform 300ms;
+  background-color: var(--my-sea);
+  border: double 5px var(--my-white);
+}
+
+.image {
+  width: 100%;
+  height: 50%;
+  box-shadow: 0px -1px 20px var(--my-black);
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 20%;
+  opacity: 90%;
+}
+
+a {
+  max-width: 10%;
+  padding: 1em;
+  background-color: var(--my-bronze);
+  box-shadow: 0px 1px 8px var(--my-black);
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: large;
+  border-radius: 20px;
+  margin: 0.2em;
+  margin-top: 2em;
+  color: var(--my-black);
+}
+
+.card-click:hover {
+  transform: scale(1.1);
+}
+
+.text {
+  text-align: center;
+  background-color: var(--my-sky);
+  color: var(--my-white);
+  width: 20em;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.text h2 {
+  font-size: 25px;
+  margin-top: 0.1em;
+  margin-bottom: 0em;
+}
+
+.text p {
+  font-size: 30px;
+  margin-top: 0em;
+  margin-bottom: 1.5em;
 }
 
 .skyline {
