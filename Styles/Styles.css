@@ -79,6 +79,7 @@ body {
   margin: 1.5em;
   border-radius: 20px;
   transition: transform 300ms;
+  border: double 5px var(--my-white);
 }
 
 .card:hover {
