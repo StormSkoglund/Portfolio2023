@@ -4,6 +4,7 @@ const flipCard3 = document.getElementById("c3");
 const div1 = document.getElementById("1");
 const div2 = document.getElementById("2");
 const div3 = document.getElementById("3");
+const dropdown = document.getElementById("under");
 
 //Flip cards and change image.
 
@@ -66,3 +67,7 @@ flipCard3.addEventListener("mouseup", function () {
   </div>
 </div>`;
 });
+
+//dropdown menu for bio
+
+dropdown.addEventListener("click", function () {});

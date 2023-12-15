@@ -21,8 +21,19 @@ p {
   --my-white: rgb(235, 222, 218);
   --my-black: rgb(36, 33, 33);
   --my-bronze: rgb(109, 147, 131);
-  --my-cardboard: rgb(142, 105, 93);
+  --my-bronze-light: rgb(193, 227, 164);
+  --my-cardboard: rgb(98, 78, 72);
+  --my-cardboard-brown: rgb(82, 57, 48);
   --my-sea: rgb(82, 91, 113);
+  --my-blue: rgb(151, 180, 188);
+  --my-box: linear-gradient(190deg, var(--my-blue) 0%, var(--my-sea) 100%);
+  --my-card: linear-gradient(
+    190deg,
+    var(--my-cardboard) 0%,
+    var(--my-cardboard) 50%,
+    var(--my-cardboard) 80%,
+    var(--my-cardboard-brown) 100%
+  );
 }
 
 body {
@@ -45,17 +56,21 @@ body {
 }
 
 .inside {
-  background-color: var(--my-white);
+  background-color: var(--my-blue);
   max-width: fit-content;
   border-top-right-radius: 100px;
   border-top-left-radius: 100px;
   padding: 1em;
   font-size: 50px;
   color: rgba(2, 64, 89, 1);
+  border-top: double 8px var(--my-white);
+  border-right: double 8px var(--my-white);
+  border-left: double 8px var(--my-white);
 }
 
 .outside,
-.inside {
+.inside,
+.under {
   text-align: center;
   margin: auto;
 }
@@ -68,8 +83,13 @@ body {
   height: 500px;
   width: fit-content;
   margin: 0 auto;
-  background-color: var(--my-white);
+  background: var(--my-box);
   border-radius: 20px;
+  padding: 1em;
+  border-top: double 8px var(--my-white);
+  border-bottom: double 8px var(--my-white);
+  border-right: double 8px var(--my-white);
+  border-left: double 8px var(--my-white);
 }
 
 .card {
@@ -93,19 +113,19 @@ body {
   margin: 1.5em;
   border-radius: 20px;
   transition: transform 300ms;
-  background-color: var(--my-sea);
+  background: var(--my-card);
   border: double 5px var(--my-white);
 }
 
 .image {
   width: 100%;
   height: 50%;
-  box-shadow: 0px -1px 20px var(--my-black);
+
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20%;
   border-bottom-right-radius: 20%;
-  opacity: 90%;
+  opacity: 70%;
 }
 
 a {
@@ -120,6 +140,12 @@ a {
   margin: 0.2em;
   margin-top: 2em;
   color: var(--my-black);
+}
+
+a:hover {
+  background-color: var(--my-bronze-light);
+  box-shadow: 1px 1px 8px var(--my-blue);
+  transition-duration: 400ms;
 }
 
 .card-click:hover {
@@ -147,6 +173,64 @@ a {
   margin-bottom: 1.5em;
 }
 
+.under {
+  background-color: var(--my-blue);
+  max-width: fit-content;
+  border-bottom-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  padding: 1em;
+  font-size: 50px;
+  color: rgba(2, 64, 89, 1);
+  border-bottom: double 8px var(--my-white);
+  border-right: double 8px var(--my-white);
+  border-left: double 8px var(--my-white);
+}
+
+.bio-click {
+  display: block;
+  background-color: var(--my-blue);
+  max-width: 20em;
+  border-bottom-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  padding: 1.5em;
+  font-size: 50px;
+  color: rgba(2, 64, 89, 1);
+  border-bottom: double 8px var(--my-white);
+  border-right: double 8px var(--my-white);
+  border-left: double 8px var(--my-white);
+  margin: 0% auto;
+}
+
+.me {
+  display: block;
+  max-width: 8em;
+  max-height: fit-content;
+  border: solid 4px var(--my-white);
+  border-radius: 20px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100%;
+  box-shadow: 0px 20px 30px;
+  margin: 0 auto;
+}
+
+.h2-bio {
+  text-align: center;
+  font-size: x-large;
+}
+
+.me-p {
+  display: table;
+  text-align: center;
+  font-size: medium;
+  font-weight: bold;
+  color: var(--my-black);
+}
+
+.h2-me-about {
+  text-align: center;
+  font-size: x-large;
+}
+
 .skyline {
   max-width: 100vw;
 }
@@ -154,4 +238,13 @@ a {
 footer {
   margin: 0%;
   padding: 0%;
+}
+
+footer p {
+  background: var(--my-sky);
+  text-align: center;
+  font-size: xx-large;
+  font-weight: bolder;
+  color: var(--my-white);
+  margin: 0% auto;
 }
