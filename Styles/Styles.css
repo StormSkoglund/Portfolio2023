@@ -186,6 +186,12 @@ a:hover {
   border-left: double 8px var(--my-white);
 }
 
+.under:hover {
+  background: var(--my-sky);
+  transition-duration: 200ms;
+  color: var(--my-black);
+}
+
 .bio-click {
   display: block;
   background-color: var(--my-blue);
@@ -199,6 +205,19 @@ a:hover {
   border-right: double 8px var(--my-white);
   border-left: double 8px var(--my-white);
   margin: 0% auto;
+  animation: Smooth 500ms ease-in forwards;
+}
+
+@keyframes Smooth {
+  0% {
+    opacity: 0%;
+  }
+  75% {
+    opacity: 50%;
+  }
+  100% {
+    opacity: 100%;
+  }
 }
 
 .me {
