@@ -26,7 +26,7 @@ flipCard1.addEventListener("mouseup", function () {
     <h2>Game Hub</h2>
     <p>My first project</p>
     <p>Made with HTML and CSS, JavaScript was added later on.</p>
-    <a href="">GitHub</a> <a href="">Netlify</a>
+    <a href="https://github.com/StormSkoglund/Interaction-Design_CA/tree/CMS/Javascript">GitHub</a> <a href="https://cms-ca-skoglund.netlify.app/">Netlify</a>
   </div>
 </div>`;
 });
@@ -47,7 +47,7 @@ flipCard2.addEventListener("mouseup", function () {
     <h2>The Community Science Museum</h2>
     <p>My second project</p>
     <p>Made exclusively with HTML and CSS, no javascript.</p>
-    <a href="">GitHub</a> <a href="">Netlify</a>
+    <a href="https://github.com/StormSkoglund/Semester_Project_1">GitHub</a> <a href="https://monumental-toffee-0be25e.netlify.app/">Netlify</a>
   </div>
 </div>`;
 });
@@ -68,7 +68,7 @@ flipCard3.addEventListener("mouseup", function () {
     <h2>The Project Exam</h2>
     <p>My third project</p>
     <p>Made with HTML, CSS and JavaScript.</p>
-    <a href="">GitHub</a> <a href="">Netlify</a>
+    <a href="https://github.com/Noroff-FEU-Assignments/project-exam-1-StormSkoglund">GitHub</a> <a href="https://project-exam-1-fall23.netlify.app/">Netlify</a>
   </div>
 </div>`;
 });
