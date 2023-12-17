@@ -46,9 +46,25 @@ body {
   left: 5em;
   top: 3.5em;
   opacity: 65%;
+  animation: glow 4s infinite ease-in;
+}
+
+@keyframes glow {
+  0% {
+    filter: drop-shadow(0px 4.5px 20px rgb(183, 215, 158));
+  }
+  75% {
+    filter: drop-shadow(0px 1.5px 10px rgb(183, 215, 158));
+  }
+  100% {
+    filter: drop-shadow(0px 5.5px 20px rgb(183, 215, 158));
+  }
 }
 
 .moon-and-man {
+  position: absolute;
+  left: 1em;
+  top: 2em;
   opacity: 90%;
 }
 
@@ -247,6 +263,14 @@ a:hover {
   color: var(--my-black);
 }
 
+#bio-click a {
+  display: block;
+  max-width: 10em;
+  margin: 0% auto;
+  margin-top: 3em;
+  text-align: center;
+}
+
 .h2-me-about {
   text-align: center;
   font-size: x-large;
@@ -268,4 +292,230 @@ footer p {
   font-weight: bolder;
   color: var(--my-white);
   margin: 0% auto;
+}
+
+@media only screen and (max-width: 1550px) and (min-width: 1450px) {
+  .card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+  }
+
+  .card {
+    width: 15em;
+    height: 25em;
+    box-shadow: 0px 5px 20px var(--my-black);
+    margin: 1.5em;
+  }
+
+  .card-click {
+    width: 15em;
+    height: 25em;
+    box-shadow: 0px 5px 20px var(--my-black);
+    margin: 1.5em;
+  }
+
+  .text {
+    text-align: center;
+    width: 15em;
+  }
+
+  .text h2 {
+    font-size: 15px;
+    font-weight: bolder;
+  }
+
+  .text p {
+    font-size: 10px;
+    padding: 0%;
+    margin-bottom: 2.5em;
+  }
+
+  a {
+    max-width: 5%;
+    padding: 1em;
+    background-color: var(--my-bronze);
+    box-shadow: 0px 1px 8px var(--my-black);
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: small;
+    border-radius: 20px;
+    margin: 0.1em;
+    margin-top: 0em;
+    color: var(--my-black);
+  }
+
+  .bio-click {
+    display: block;
+    background-color: var(--my-blue);
+    max-width: 15em;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    padding: 1.5em;
+    font-size: 50px;
+    color: rgba(2, 64, 89, 1);
+    border-bottom: var(--my-border);
+    border-right: var(--my-border);
+    border-left: var(--my-border);
+    margin: 0% auto;
+    animation: Smooth 500ms ease-in;
+  }
+
+  .skyline,
+  footer {
+    max-width: 100vw;
+  }
+}
+
+@media only screen and (max-width: 1450px) and (min-width: 1350px) {
+  .card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+  }
+
+  .card {
+    width: 15em;
+    height: 25em;
+    box-shadow: 0px 5px 20px var(--my-black);
+    margin: 1.5em;
+  }
+
+  .card-click {
+    width: 15em;
+    height: 25em;
+    box-shadow: 0px 5px 20px var(--my-black);
+    margin: 1.5em;
+  }
+
+  .text {
+    text-align: center;
+    width: 15em;
+  }
+
+  .text h2 {
+    font-size: 15px;
+    font-weight: bolder;
+  }
+
+  .text p {
+    font-size: 10px;
+    padding: 0%;
+    margin-bottom: 2.5em;
+  }
+
+  a {
+    max-width: 5%;
+    padding: 1em;
+    background-color: var(--my-bronze);
+    box-shadow: 0px 1px 8px var(--my-black);
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: small;
+    border-radius: 20px;
+    margin: 0.1em;
+    margin-top: 0em;
+    color: var(--my-black);
+  }
+
+  .bio-click {
+    display: block;
+    background-color: var(--my-blue);
+    max-width: 15em;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    padding: 1.5em;
+    font-size: 50px;
+    color: rgba(2, 64, 89, 1);
+  }
+
+  .skyline,
+  footer {
+    max-width: 100vw;
+  }
+}
+
+@media only screen and (max-width: 1350px) and (min-width: 1060px) {
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+  }
+
+  .outside {
+    font-size: 50px;
+  }
+
+  .inside {
+    background-color: var(--my-blue);
+    max-width: fit-content;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+    padding: 1em;
+    font-size: 35px;
+    color: rgba(2, 64, 89, 1);
+    border-top: double 8px var(--my-white);
+    border-right: double 8px var(--my-white);
+    border-left: double 8px var(--my-white);
+  }
+  .bio-click {
+    display: block;
+    background-color: var(--my-blue);
+    max-width: 10em;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    padding: 1.5em;
+    font-size: 50px;
+    color: rgba(2, 64, 89, 1);
+  }
+}
+
+@media only screen and (max-width: 1060px) and (min-width: 600px) {
+  .moon-and-man {
+    display: none;
+  }
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+  }
+
+  .outside {
+    font-size: 50px;
+  }
+
+  .inside {
+    background-color: var(--my-blue);
+    max-width: fit-content;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+    padding: 1em;
+    font-size: 35px;
+    color: rgba(2, 64, 89, 1);
+    border-top: double 8px var(--my-white);
+    border-right: double 8px var(--my-white);
+    border-left: double 8px var(--my-white);
+  }
+  .bio-click {
+    display: block;
+    background-color: var(--my-blue);
+    max-width: 10em;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    padding: 1.5em;
+    font-size: 50px;
+    color: rgba(2, 64, 89, 1);
+  }
 }
