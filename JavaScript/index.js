@@ -68,7 +68,7 @@ flipCard3.addEventListener("mouseup", function () {
     <h2>The Project Exam</h2>
     <p>My third project</p>
     <p>Made with HTML, CSS and JavaScript.</p>
-    <a href="https://github.com/Noroff-FEU-Assignments/project-exam-1-StormSkoglund">Github</a> <a href="https://www.linkedin.com/in/alex-storm-skoglund-13764372/">Netlify</a>
+    <a href="https://github.com/Noroff-FEU-Assignments/project-exam-1-StormSkoglund">Github</a> <a href="https://project-exam-1-fall23.netlify.app/">Netlify</a>
   </div>
 </div>`;
 });
@@ -120,5 +120,5 @@ dropdown.addEventListener("click", function () {
   alt="A profile picture of me"
   class="me"
 />
-<a href="https://github.com/StormSkoglund">My Github Profile</a> <a href="https://github.com/StormSkoglund">My LinkedIn Profile</a>`;
+<a href="https://github.com/StormSkoglund">My Github Profile</a> <a href="https://www.linkedin.com/in/alex-storm-skoglund-13764372/">My LinkedIn Profile</a>`;
 });
