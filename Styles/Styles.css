@@ -592,7 +592,7 @@ footer p {
   }
 
   .outside {
-    font-size: 25px;
+    font-size: 30px;
   }
 
   .inside {
@@ -669,17 +669,7 @@ footer p {
   .bio-click {
     display: block;
     background-color: var(--my-blue);
-    max-width: 5em;
-    border-bottom-right-radius: 100px;
-    border-bottom-left-radius: 100px;
-    padding: 1.5em;
-    font-size: 20px;
-    color: rgba(2, 64, 89, 1);
-  }
-  .bio-click {
-    display: block;
-    background-color: var(--my-blue);
-    max-width: 45%;
+    max-width: 50%;
   }
   .me {
     max-width: 5em;
